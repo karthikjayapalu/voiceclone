@@ -1,9 +1,11 @@
 streamlit==1.28.1
 soundfile==0.12.1
-torch>=2.0.0
+# Pin torch to a stable CPU wheel version you know works locally:
+torch==2.3.1
 numpy>=1.24.0
-voxcpm>=1.5.0
+voxcpm==1.5.0
 audio-recorder-streamlit==0.0.5
 setuptools>=65.0.0,<70.0.0
 kagglehub
-torchcodec
+# try without torchcodec first – let voxcpm pull what it needs
+# torchcodec
